@@ -1,0 +1,1 @@
+*/10 * * * * root /usr/local/lib/eaconsole/collect-openai.py >> /var/log/eaconsole-openai.log 2>&1
