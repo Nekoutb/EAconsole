@@ -1,0 +1,1 @@
+15 */6 * * * root /usr/local/lib/eaconsole/collect-hostinger.py >> /var/log/eaconsole-hostinger.log 2>&1
