@@ -1,0 +1,1 @@
+*/5 * * * * root /usr/local/lib/eaconsole/collect-bitninja.py >> /var/log/eaconsole-bitninja.log 2>&1
