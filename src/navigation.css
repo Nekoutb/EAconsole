@@ -1,0 +1,1 @@
+.pending-modules{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.pending-modules .card{min-height:185px}.vultr-live,.sites,.pending-modules article{scroll-margin-top:20px}@media(max-width:900px){.pending-modules{grid-template-columns:1fr}}
