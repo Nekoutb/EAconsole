@@ -147,7 +147,26 @@ Information needed:
 - Sending domains
 - Bounce, complaint, and quota alert thresholds
 
-## 9. Maintenance planning
+## 9. Wasabi — object storage and backups
+
+- [ ] Retrieve bucket inventory
+- [ ] Monitor bucket size, object count, and storage growth
+- [ ] Track backup upload recency and failed backup jobs
+- [ ] Monitor immutability/object-lock settings where used
+- [ ] Track monthly storage and egress-related costs
+- [ ] Track plan, billing cycle, and renewal date
+- [ ] Alert when an expected backup has not arrived
+
+Information needed:
+
+- Dedicated read-only Wasabi access key and secret key
+- Wasabi account or sub-account name
+- Regions and buckets to monitor
+- Expected backup schedule for each bucket
+- Storage budget and growth-warning thresholds
+- Subscription cost, billing currency, and renewal date
+
+## 10. Maintenance planning
 
 - [ ] Create maintenance calendar
 - [ ] Assign maintenance owner and approver
@@ -162,7 +181,7 @@ Information needed:
 - Notification lead time
 - Required maintenance checklist
 
-## 10. Risk register
+## 11. Risk register
 
 - [ ] Create risk submission form
 - [ ] Define severity and likelihood scales
@@ -177,7 +196,7 @@ Information needed:
 - Risk owners and escalation recipients
 - Review frequency
 
-## 11. Alerts and reports
+## 12. Alerts and reports
 
 - [ ] Configure email alerts
 - [ ] Add optional Teams or Slack alerts
@@ -203,4 +222,5 @@ Information needed:
 7. MailerSend
 8. Anthropic Claude
 9. OpenAI/Codex subscription
-10. Maintenance, risk, alerts, and reports
+10. Wasabi storage and backup monitoring
+11. Maintenance, risk, alerts, and reports
