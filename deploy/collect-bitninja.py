@@ -12,7 +12,7 @@ def pattern_count(filename,patterns):
         text=open('/var/log/bitninja/'+filename,encoding='utf-8',errors='ignore').read().lower()
         return sum(text.count(p) for p in patterns)
     except Exception: return 0
-malware_events=pattern_count('mod.malware_detection.log',['malware','infected','quarantin'])
+malware_events=pattern_count('mod.malware_detection.log',['infected','quarantined','malicious file','threat detected'])
 blocked_events=pattern_count('mod.waf3.log',['blocked','attack'])+pattern_count('mod.ip_filter.log',['blocked','denied'])+pattern_count('mod.port_honeypot.log',['attack','blocked'])
 agent_errors=pattern_count('error.log',['error','critical','fatal'])
 fx=600.0
