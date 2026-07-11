@@ -1,0 +1,1 @@
+*/5 * * * * root /usr/local/lib/eaconsole/collect-cloudflare.py >> /var/log/eaconsole-cloudflare.log 2>&1
