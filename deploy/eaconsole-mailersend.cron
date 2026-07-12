@@ -1,0 +1,1 @@
+*/15 * * * * root /usr/local/lib/eaconsole/collect-mailersend.py >> /var/log/eaconsole-mailersend.log 2>&1
