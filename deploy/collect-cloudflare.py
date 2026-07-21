@@ -22,7 +22,13 @@ try:
     ssl_mode=cf(f'zones/{zid}/settings/ssl').get('value')
 except Exception:
     ssl_mode='permission unavailable'
-names=sorted({r['name'] for r in records if r.get('type') in ('A','AAAA','CNAME') and '*' not in r.get('name','')})
+required_websites={
+    'www.eliteadvisors.cm-ea.com',
+    'www.eace.cm-ea.com',
+    'www.bms.cm-ea.com',
+}
+dns_websites={r['name'] for r in records if r.get('type') in ('A','AAAA','CNAME') and '*' not in r.get('name','')}
+names=sorted(dns_websites | required_websites)
 websites=[]
 for name in names:
     started=time.perf_counter(); status=None; error=None
